@@ -7,15 +7,15 @@ body {
 
 #resume-floater {
 	position: fixed;
-	top: 5%;
-	right: 5%;
+	top: 3%;
+	right: 3%;
 	box-shadow: 5px 5px 40px #888888;
 	z-index: 50;
 }
 
 #page-title {
 	font-size: 1.8em;
-	margin-top: 8vh;
+	margin-top: 11vh;
 	margin-bottom: 18vh;
 }
 
