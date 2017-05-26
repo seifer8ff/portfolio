@@ -29,7 +29,7 @@ gulp.task('useref', function(){
 
 // optimize images
 gulp.task('images', function(){
-  return gulp.src('app/img/**/*.+(png|jpg|gif|svg)')
+  return gulp.src('app/img/**/*.+(png|jpg|gif|svg|pdf)')
   .pipe(imagemin())
   .pipe(gulp.dest('dist/img'))
 });
