@@ -16,7 +16,7 @@ var browserSync = require('browser-sync').create();
 
 // Concatenate & Minify JS & CSS
 gulp.task('useref', function(){
-    return gulp.src('app/*.html')
+    return gulp.src('app/index.html')
     .pipe(useref())
     // strips debug and minifies only if it's a JavaScript file
     .pipe(gulpIf('*.js', stripDebug()))

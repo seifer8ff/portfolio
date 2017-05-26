@@ -2,6 +2,11 @@
 body {
 	font-family: 'Rubik Mono One', sans-serif;
 	font-family: 'Rubik', sans-serif;
+	background-color: #F3F7FE;
+}
+
+a>img {
+	padding-bottom: 5px;
 }
 
 
@@ -9,7 +14,7 @@ body {
 	position: fixed;
 	top: 3%;
 	right: 3%;
-	box-shadow: 5px 5px 40px #888888;
+	box-shadow: 5px 5px 30px #888888;
 	z-index: 50;
 }
 
@@ -42,27 +47,27 @@ body {
 
 .skew hr {
 	border: none;
-	height: 2px;
-	background: linear-gradient(270deg, #4610ec, #12b0f9, #0543aa);
+	height: 1px;
+	background: linear-gradient(270deg, rgba(159, 188, 246, 0), #0353f1, rgba(159, 188, 246, 0));
 	background-size: 600% 600%;
 	/*opacity: 0.5;*/
 
-	-webkit-animation: gradientShift 9s ease infinite;
-	-moz-animation: gradientShift 9s ease infinite;
-	animation: gradientShift 9s ease infinite;
+	-webkit-animation: gradientShift 14s ease infinite;
+	-moz-animation: gradientShift 14s ease infinite;
+	animation: gradientShift 14s ease infinite;
 }
 
 .gradient-text {
 	-webkit-background-clip: text !important;
 	-webkit-text-fill-color: transparent !important;
 
-	background: linear-gradient(270deg, #4610ec, #12b0f9, #0543aa);
+	background: linear-gradient(251deg, #0353f1, #ffa700, #0353f1);
 	background-size: 600% 600%;
 
-	-webkit-animation: gradientShift 8s ease infinite;
-	-moz-animation: gradientShift 8s ease infinite;
-	-o-animation: gradientShift 8s ease infinite;
-	animation: gradientShift 8s ease infinite;
+	-webkit-animation: gradientShift 12s ease infinite;
+	-moz-animation: gradientShift 12s ease infinite;
+	-o-animation: gradientShift 12s ease infinite;
+	animation: gradientShift 12s ease infinite;
 }
 
 @-webkit-keyframes gradientShift {
@@ -105,6 +110,10 @@ a[aria-expanded="true"] .caret {
     border-bottom: 4px solid #000000;
 }
 
+.project-links {
+	margin-top: 10px;
+}
+
 .link-right {
 	float: right;
 }
@@ -112,8 +121,33 @@ a[aria-expanded="true"] .caret {
 
 /*BOOTSTRAP OVERRIDES */
 
+a {
+	color: #2D70F3;
+}
+
+a:hover, a:focus {
+	color: #0353F1;
+}
+
 .label {
 	font-weight: 400;
+}
+
+.label-default {
+	background-color: #FFA700;
+	color: white;
+}
+
+.btn-primary {
+	background-color: #0353F1;
+}
+
+.btn-primary:hover {
+	background-color: #2D70F3;
+}
+
+.well {
+	background-color: #FFFBF3;
 }
 
 
