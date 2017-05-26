@@ -34,6 +34,12 @@ gulp.task('images', function(){
   .pipe(gulp.dest('dist/img'))
 });
 
+// copy fonts to dist
+gulp.task('fonts', function() {
+  return gulp.src('app/fonts/**/*')
+  .pipe(gulp.dest('dist/fonts'))
+})
+
 // copy extras to dist
 gulp.task('extras', function() {
   return gulp.src('app/*.+(png|xml|ico|json|svg)')
@@ -59,6 +65,7 @@ gulp.task('watch', ['browserSync'], function() {
 // build task
 gulp.task('build', function() {
   gulp.run('useref'); 
+  gulp.run('fonts'); 
   gulp.run('extras'); 
   gulp.run('images'); 
 });
