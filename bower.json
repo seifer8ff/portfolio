@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "authors": [
+    "seifer8ff <brady.bcmp@gmail.com>"
+  ],
+  "description": "Brady Mauermann-Peterson's web development portfolio site.",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

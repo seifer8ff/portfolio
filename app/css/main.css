@@ -1,0 +1,148 @@
+
+body {
+	font-family: 'Rubik Mono One', sans-serif;
+	font-family: 'Rubik', sans-serif;
+}
+
+
+#resume-floater {
+	position: fixed;
+	top: 5%;
+	right: 5%;
+	box-shadow: 5px 5px 40px #888888;
+	z-index: 50;
+}
+
+#page-title {
+	font-size: 1.8em;
+	margin-top: 8vh;
+	margin-bottom: 18vh;
+}
+
+#page-title>h1 {
+	font-weight: 900;
+	font-size: 1.8em;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	font-weight: 900; 
+}
+
+#projects-link {
+	margin-top: 9vh;
+	margin-bottom: -10vh;
+}
+
+.skew {
+	transform: skewY(-7deg);
+	/*padding-bottom: 100px;*/
+	margin-top: 100px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+
+.skew hr {
+	border: none;
+	height: 2px;
+	background: linear-gradient(270deg, #4610ec, #12b0f9, #0543aa);
+	background-size: 600% 600%;
+	/*opacity: 0.5;*/
+
+	-webkit-animation: gradientShift 9s ease infinite;
+	-moz-animation: gradientShift 9s ease infinite;
+	animation: gradientShift 9s ease infinite;
+}
+
+.gradient-text {
+	-webkit-background-clip: text !important;
+	-webkit-text-fill-color: transparent !important;
+
+	background: linear-gradient(270deg, #4610ec, #12b0f9, #0543aa);
+	background-size: 600% 600%;
+
+	-webkit-animation: gradientShift 8s ease infinite;
+	-moz-animation: gradientShift 8s ease infinite;
+	-o-animation: gradientShift 8s ease infinite;
+	animation: gradientShift 8s ease infinite;
+}
+
+@-webkit-keyframes gradientShift {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+@-moz-keyframes gradientShift {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+@-o-keyframes gradientShift {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+@keyframes gradientShift { 
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+
+.img-bottom {
+	box-shadow: 10px 10px 26px #888888;
+	width: 90%;
+	margin-bottom: 8%;
+}
+
+.img-top {
+	box-shadow: 15px 15px 50px #888888;
+	position: absolute;
+	top: 15%;
+	right: 7%;
+	height: 87%;
+}
+
+a[aria-expanded="true"] .caret {
+	border-top: none;
+    border-bottom: 4px solid #000000;
+}
+
+.link-right {
+	float: right;
+}
+
+
+/*BOOTSTRAP OVERRIDES */
+
+.label {
+	font-weight: 400;
+}
+
+
+/*================
+MEDIA QUERIES
+===============*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	#page-title {
+		font-size: 2.5em;
+		margin-top: 13vh;
+		margin-bottom: 18vh;
+	}
+
+	#page-title>h1 {
+		font-size: 2.5em;
+		letter-spacing: 5px;
+		text-transform: uppercase;
+		font-weight: 900; 
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

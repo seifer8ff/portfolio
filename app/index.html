@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Brady Mauermann-Peterson | Portfolio</title>
+
+	<!--build:css css/styles.min.css-->
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./vendor/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<!--endbuild-->
+</head>
+<body>
+	<header>
+		<a href="./img/mauermann-resume.pdf">
+			<button class="btn btn-default" id="resume-floater">Resume 
+				<span class="glyphicon glyphicon-download"></span>
+			</button>
+		</a>
+
+	</header>
+	<main>
+		<div class="container">
+			<div class="row">
+				<section class="col-xs-12 skew" id="page-title">
+					<h1 class="gradient-text">Brady Mauermann-Peterson</h1>
+					<h4 class="small">-Web Developer</h4>
+				</section>
+				<section class="col-xs-4 col-xs-offset-1 col-sm-2 col-sm-offset-2 text-center">
+					<a href="https://github.com/seifer8ff/">
+						<img class="img-responsive" src="./img/github-logo-cropped.png" alt="GitHub Logo">Check Out my GitHub!
+					</a>
+				</section>
+				<section class="col-xs-4 col-xs-offset-2 col-sm-2 col-sm-offset-4 text-center">
+					<a href="https://www.linkedin.com/in/bradymauermann/">
+						<img class="img-responsive" src="./img/Logo-2C-128px-TM.png" alt="linkedIn Logo">Find me on linkedIn!
+					</a>
+				</section>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-4 text-center" id="projects-link">
+					<h4>Projects</h4>
+					<span class="glyphicon glyphicon-chevron-down"></span>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<section class="col-xs-12 skew">
+					<hr>
+				</section>
+			</div>
+			<div class="row">
+				<article class="col-xs-12 col-sm-8 col-sm-offset-2">
+					<section class="col-xs-12 col-sm-6 col-sm-offset-1">
+						<img class="img-rounded img-bottom" src="./img/ow-stats-desktop-large.jpg" alt="Overwatch Stats desktop site">
+						<img class="img-rounded img-top" src="./img/ow-stats-mobile.jpg" alt="Overwatch Stats mobile site">
+					</section>
+					<section class="col-xs-12 col-sm-4">
+						<h4>Overwatch Stats</h4>
+						<p>
+							Front-end static site that uses Handlebars for templating.
+							Consumes two different APIs and includes form validation.
+						</p>
+						<span class="label label-default">Bootstrap</span>
+						<span class="label label-default">HandleBars</span>
+						<span class="label label-default">JavaScript</span>
+						<span class="label label-default">jQuery</span>
+						<span class="label label-default">Overwatch API</span>
+						<span class="label label-default">OW API</span>
+						<span class="label label-default">Gulp</span>
+						<div>
+							<a href="#owStats-more" onclick="return false;" data-toggle="collapse" data-target="#owStats-more" aria-expanded="false" aria-controls="owStats-more">See More <span class="caret"></span></a>
+							<a class="link-right" href="https://www.ow-stats.com">Go To Site <span class="glyphicon glyphicon-arrow-right"></span></a>
+						</div>
+						<div class="collapse" id="owStats-more">
+							<div class="well">
+								The site pulls users' Overwatch statistics from one API, and hero information from another. The homepage allows users to toggle on display of heroes, and compare statistics with animated stat bar visualizations.
+							</div>
+						</div>
+					</section>
+				</article>
+			</div>
+			<div class="row">
+				<section class="col-xs-12 skew">
+					<hr>
+				</section>
+			</div>
+			<div class="row">
+				<article class="col-xs-12 col-sm-8 col-sm-offset-2">
+					<section class="col-xs-12 col-sm-6 col-sm-offset-1">
+						<img class="img-rounded img-bottom" src="./img/twitter-stream-desktop-large.jpg" alt="Twitter Stream desktop site">
+						<img class="img-rounded img-top" src="./img/twitter-stream-mobile.jpg" alt="Twitter Stream mobile site">
+					</section>
+					<section class="col-xs-12 col-sm-4">
+						<h4>Twitter Stream</h4>
+						<p>
+							Full-stack site using NodeJS, Express, and SocketIO on the backend and EJS templating for the front-end.
+						</p>
+						<span class="label label-default">NodeJS</span>
+						<span class="label label-default">Twitter API</span>
+						<span class="label label-default">Express</span>
+						<span class="label label-default">RESTful Routing</span>
+						<span class="label label-default">MongoDB</span>
+						<span class="label label-default">Mongoose</span>
+						<span class="label label-default">Passport</span>
+						<span class="label label-default">EJS</span>
+						<div>
+							<a href="#twitter-more" onclick="return false;" data-toggle="collapse" data-target="#twitter-more" aria-expanded="false" aria-controls="twitter-more">See More <span class="caret"></span></a>
+							<a class="link-right" href="#">Go To Site <span class="glyphicon glyphicon-arrow-right"></span></a>
+						</div>
+						<div class="collapse" id="twitter-more">
+							<div class="well">
+								The site streams tweets that match user entered keywords. Includes authentication with Twitter using Passport. 
+								Routes are protected, and follow REST conventions.
+								SocketIO is used to stream the tweets to users' DOM.
+							</div>
+						</div>
+					</section>
+				</article>
+			</div>
+			<div class="row">
+				<section class="col-xs-12 skew">
+					<hr>
+				</section>
+			</div>
+			<div class="row">
+				<article class="col-xs-12 col-sm-8 col-sm-offset-2">
+					<section class="col-xs-12 col-sm-6 col-sm-offset-1">
+						<img class="img-rounded img-bottom" src="./img/portfolio-desktop-large.jpg" alt="Portfolio desktop site">
+						<img class="img-rounded img-top" src="./img/portfolio-mobile.jpg" alt="Portfolio mobile site">
+					</section>
+					<section class="col-xs-12 col-sm-4">
+						<h4>Portfolio</h4>
+						<p>Static site built with bootstrap- you're on it right now!</p>
+						<span class="label label-default">Bootstrap</span>
+						<span class="label label-default">JavaScript</span>
+						<div>
+							<a href="#portfolio-more" onclick="return false;" data-toggle="collapse" data-target="#portfolio-more" aria-expanded="false" aria-controls="portfolio-more">See More <span class="caret"></span></a>
+						</div>
+						<div class="collapse" id="portfolio-more">
+							<div class="well">
+								This site is designed to be simple, clean, and responsive.
+							</div>
+						</div>
+					</section>
+				</article>
+			</div>
+			<div class="row">
+				<section class="col-xs-12 skew">
+					<hr>
+				</section>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-4 text-center">
+					<span class="glyphicon glyphicon-chevron-up"></span>
+					<h4>Top</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3 text-center">
+					<p>2017 - Developed by Brady Mauermann-Peterson</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!--build:js js/main.min.js -->
+	<script type="text/javascript" src="./vendor/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="./vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+	<!-- endbuild -->
+</body>
+</html>
