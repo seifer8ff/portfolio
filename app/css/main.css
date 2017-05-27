@@ -32,9 +32,52 @@ a>img {
 	font-weight: 900; 
 }
 
-#projects-link {
+.scroll {
+	/*min-width: 250px;*/
+	background-image: none;
+	background-color: transparent;
+	border: none;
+}
+
+#scroll-projects {
 	margin-top: 9vh;
 	margin-bottom: -5vh;
+}
+
+#scroll-top {
+	margin-bottom: 8%;
+}
+
+.scroll>h4 {
+	letter-spacing: 1px;
+	color: #9FBCF6;
+}
+
+.scroll>.glyphicon {
+	font-size: 1.8em;
+	color: #2D70F3;
+
+	-webkit-animation: float 1s alternate linear infinite;
+	-moz-animation: float 1s alternate linear infinite;
+	-o-animation: float 1s alternate linear infinite;
+	animation: float 1s alternate linear infinite;
+}
+
+@-webkit-keyframes float {
+	0%{transform: translateY(0%)}
+	100%{transform: translateY(100%)}
+}
+@-moz-keyframes float {
+	0%{transform: translateY(0%)}
+	100%{transform: translateY(100%)}
+}
+@-o-keyframes float {
+	0%{transform: translateY(0%)}
+	100%{transform: translateY(100%)}
+}
+@keyframes float { 
+	0%{transform: translateY(0%)}
+	100%{transform: translateY(30%)}
 }
 
 .skew {
@@ -54,6 +97,7 @@ a>img {
 
 	-webkit-animation: gradientShift 14s ease infinite;
 	-moz-animation: gradientShift 14s ease infinite;
+	-o-animation: gradientShift 14s ease infinite;
 	animation: gradientShift 14s ease infinite;
 }
 
@@ -119,6 +163,10 @@ a[aria-expanded="true"] .caret {
 	float: right;
 }
 
+#footer {
+	margin-bottom: 40px;
+}
+
 
 /*BOOTSTRAP OVERRIDES */
 
@@ -139,12 +187,17 @@ a:hover, a:focus {
 	color: white;
 }
 
+button, .btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus {
+    outline: none;
+}
+
 .btn-primary {
-	background-color: #0353F1;
+	background-color: #2D70F3;
 }
 
 .btn-primary:hover {
-	background-color: #2D70F3;
+	background-color: #0353F1;
 }
 
 .well {
