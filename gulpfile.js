@@ -10,27 +10,34 @@ var gulpIf = require('gulp-if');
 var useref = require('gulp-useref');
 var cssnano = require('gulp-cssnano');
 var imagemin = require('gulp-imagemin');
+var imageminJpegRecompress = require('imagemin-jpeg-recompress');
 var browserSync = require('browser-sync').create();
 
 
 
 // Concatenate & Minify JS & CSS
 gulp.task('useref', function(){
-    return gulp.src('app/index.html')
-    .pipe(useref())
-    // strips debug and minifies only if it's a JavaScript file
-    .pipe(gulpIf('*.js', stripDebug()))
-    .pipe(gulpIf('*.js', uglify()))
-    .pipe(gulp.dest('dist'))
-    // Minifies only if it's a CSS file
-    .pipe(gulpIf('*.css', cssnano()))
-    .pipe(gulp.dest('dist'))
+  return gulp.src('app/index.html')
+  .pipe(useref())
+// strips debug and minifies only if it's a JavaScript file
+.pipe(gulpIf('*.js', stripDebug()))
+.pipe(gulpIf('*.js', uglify()))
+.pipe(gulp.dest('dist'))
+// Minifies only if it's a CSS file
+.pipe(gulpIf('*.css', cssnano()))
+.pipe(gulp.dest('dist'))
 });
 
 // optimize images
 gulp.task('images', function(){
   return gulp.src('app/img/**/*.+(png|jpg|gif|svg|pdf)')
-  .pipe(imagemin())
+  .pipe(imagemin([
+    imageminJpegRecompress({
+      progressive: true,
+      max: 80,
+      min: 70
+    })
+    ]))
   .pipe(gulp.dest('dist/img'))
 });
 
@@ -57,9 +64,9 @@ gulp.task('browserSync', function() {
 
 // Watch Files For Changes and reload browser
 gulp.task('watch', ['browserSync'], function() {
-    gulp.watch('app/*.html', browserSync.reload); 
-    gulp.watch('app/js/*.js', browserSync.reload); 
-    gulp.watch('app/css/*.css', browserSync.reload); 
+  gulp.watch('app/*.html', browserSync.reload); 
+  gulp.watch('app/js/*.js', browserSync.reload); 
+  gulp.watch('app/css/*.css', browserSync.reload); 
 });
 
 // build task
