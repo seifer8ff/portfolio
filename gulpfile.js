@@ -11,6 +11,7 @@ var useref = require('gulp-useref');
 var cssnano = require('gulp-cssnano');
 var imagemin = require('gulp-imagemin');
 var imageminJpegRecompress = require('imagemin-jpeg-recompress');
+var imageminPngquant = require('imagemin-pngquant');
 var browserSync = require('browser-sync').create();
 
 
@@ -36,7 +37,8 @@ gulp.task('images', function(){
       progressive: true,
       max: 80,
       min: 70
-    })
+    }),
+    imageminPngquant({quality: '75-85'}),
     ]))
   .pipe(gulp.dest('dist/img'))
 });
