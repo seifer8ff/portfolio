@@ -88,30 +88,31 @@ a>img {
 	text-align: center;
 }
 
-.skew hr {
-	border: none;
-	height: 1px;
-	background: linear-gradient(270deg, rgba(159, 188, 246, 0.2), rgba(3, 83, 241, 0.8), rgba(159, 188, 246, 0.2));
-	background-size: 600% 600%;
-	/*opacity: 0.5;*/
-
-	-webkit-animation: gradientShift 14s ease infinite;
-	-moz-animation: gradientShift 14s ease infinite;
-	-o-animation: gradientShift 14s ease infinite;
-	animation: gradientShift 14s ease infinite;
-}
-
 .gradient-text {
+	color: #0353F1;   /*fallback for non-webkit browsers*/
+
 	-webkit-background-clip: text !important;
 	-webkit-text-fill-color: transparent !important;
 
-	background: linear-gradient(251deg, #0353f1, #ffa700, #0353f1);
+	background: -webkit-linear-gradient(251deg, #0353f1, #ffa700, #0353f1);
 	background-size: 600% 600%;
 
 	-webkit-animation: gradientShift 12s ease infinite;
 	-moz-animation: gradientShift 12s ease infinite;
 	-o-animation: gradientShift 12s ease infinite;
 	animation: gradientShift 12s ease infinite;
+}
+
+.skew hr {
+	border: none;
+	height: 1px;
+	background: linear-gradient(270deg, rgba(159, 188, 246, 0.2), rgba(3, 83, 241, 0.8), rgba(159, 188, 246, 0.2));
+	background-size: 600% 600%;
+
+	-webkit-animation: gradientShift 14s ease infinite;
+	-moz-animation: gradientShift 14s ease infinite;
+	-o-animation: gradientShift 14s ease infinite;
+	animation: gradientShift 14s ease infinite;
 }
 
 @-webkit-keyframes gradientShift {
