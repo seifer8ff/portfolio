@@ -89,7 +89,7 @@ a>img {
 }
 
 .gradient-text {
-	color: #0353F1;   /*fallback for non-webkit browsers*/
+	color: #ffa700;   /*fallback for non-webkit browsers*/
 
 	-webkit-background-clip: text !important;
 	-webkit-text-fill-color: transparent !important;
