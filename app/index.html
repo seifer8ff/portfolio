@@ -29,35 +29,34 @@
 </head>
 <body>
 	<header>
-		<a href="./img/mauermann-resume.pdf">
-			<button class="btn btn-primary" id="resume-floater">Resume 
-				<span class="glyphicon glyphicon-download"></span>
-			</button>
+		<a class="btn btn-primary" id="resume-floater" href="./img/mauermann-resume.pdf">
+			Resume
+			<span class="glyphicon glyphicon-download"></span>
 		</a>
 
 	</header>
 	<main>
 		<div class="container">
 			<div class="row">
-				<section class="col-xs-12 skew" id="page-title">
+				<div class="col-xs-12 skew" id="page-title">
 					<h1 class="gradient-text">Brady Mauermann-Peterson</h1>
 					<h4 class="small">-Web Developer</h4>
-				</section>
-				<section class="col-xs-4 col-xs-offset-1 col-sm-2 col-sm-offset-2 text-center">
+				</div>
+				<div class="col-xs-4 col-xs-offset-1 col-sm-2 col-sm-offset-2 text-center">
 					<a href="https://github.com/seifer8ff/">
 						<img class="img-responsive" src="./img/github-logo-cropped.png" alt="GitHub Logo">Check Out my GitHub!
 					</a>
-				</section>
-				<section class="col-xs-4 col-xs-offset-2 col-sm-2 col-sm-offset-4 text-center">
+				</div>
+				<div class="col-xs-4 col-xs-offset-2 col-sm-2 col-sm-offset-4 text-center">
 					<a href="https://www.linkedin.com/in/bradymauermann/">
 						<img class="img-responsive" src="./img/Logo-2C-128px-TM.png" alt="linkedIn Logo">Find me on linkedIn!
 					</a>
-				</section>
+				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-4 col-sm-offset-4 text-center">
 					<button class="scroll" id="scroll-projects">
-						<h4>PROJECTS</h4>
+						<span>PROJECTS</span>
 						<span class="glyphicon glyphicon-chevron-down"></span>
 					</button>
 				</div>
@@ -65,17 +64,17 @@
 		</div>
 		<div class="container-fluid">
 			<div class="row">
-				<section class="col-xs-12 skew" id="project-ow">
+				<div class="col-xs-12 skew" id="project-ow">
 					<hr>
-				</section>
+				</div>
 			</div>
-			<div class="row">
-				<article class="col-xs-12 col-lg-8 col-lg-offset-2">
-					<section class="col-xs-12 col-sm-6 col-sm-offset-1">
+			<article class="row">
+				<div class="col-xs-12 col-lg-8 col-lg-offset-2">
+					<div class="col-xs-12 col-sm-6 col-sm-offset-1">
 						<img class="img-rounded img-bottom" src="./img/ow-stats-desktop.jpg" alt="Overwatch Stats desktop site">
 						<img class="img-rounded img-top" src="./img/ow-stats-mobile.jpg" alt="Overwatch Stats mobile site">
-					</section>
-					<section class="col-xs-12 col-sm-4">
+					</div>
+					<div class="col-xs-12 col-sm-4">
 						<h4>Overwatch Stats</h4>
 						<p>
 							Front-end static site that uses Handlebars for templating.
@@ -97,21 +96,21 @@
 								The site pulls users' Overwatch statistics from one API, and hero information from another. The homepage allows users to toggle on display of heroes, and compare statistics with animated stat bar visualizations.
 							</div>
 						</div>
-					</section>
-				</article>
-			</div>
+					</div>
+				</div>
+			</article>
 			<div class="row">
-				<section class="col-xs-12 skew">
+				<div class="col-xs-12 skew">
 					<hr>
-				</section>
+				</div>
 			</div>
-			<div class="row">
-				<article class="col-xs-12 col-lg-8 col-lg-offset-2">
-					<section class="col-xs-12 col-sm-6 col-sm-offset-1">
+			<article class="row">
+				<div class="col-xs-12 col-lg-8 col-lg-offset-2">
+					<div class="col-xs-12 col-sm-6 col-sm-offset-1">
 						<img class="img-rounded img-bottom" src="./img/twitter-stream-desktop.jpg" alt="Twitter Stream desktop site">
 						<img class="img-rounded img-top" src="./img/twitter-stream-mobile.jpg" alt="Twitter Stream mobile site">
-					</section>
-					<section class="col-xs-12 col-sm-4">
+					</div>
+					<div class="col-xs-12 col-sm-4">
 						<h4>Tweet Track</h4>
 						<p>
 							Full-stack site using NodeJS, Express, and SocketIO on the backend and EJS templating for the front-end.
@@ -136,21 +135,21 @@
 								SocketIO is used to stream the tweets to users' DOM.
 							</div>
 						</div>
-					</section>
-				</article>
-			</div>
+					</div>
+				</div>
+			</article>
 			<div class="row">
-				<section class="col-xs-12 skew">
+				<div class="col-xs-12 skew">
 					<hr>
-				</section>
+				</div>
 			</div>
-			<div class="row">
-				<article class="col-xs-12 col-lg-8 col-lg-offset-2">
-					<section class="col-xs-12 col-sm-6 col-sm-offset-1">
+			<article class="row">
+				<div class="col-xs-12 col-lg-8 col-lg-offset-2">
+					<div class="col-xs-12 col-sm-6 col-sm-offset-1">
 						<img class="img-rounded img-bottom" src="./img/portfolio-desktop.jpg" alt="Portfolio desktop site">
 						<img class="img-rounded img-top" src="./img/portfolio-mobile.jpg" alt="Portfolio mobile site">
-					</section>
-					<section class="col-xs-12 col-sm-4">
+					</div>
+					<div class="col-xs-12 col-sm-4">
 						<h4>Portfolio</h4>
 						<p>Static site built with bootstrap- you're on it right now!</p>
 						<span class="label label-default">Bootstrap</span>
@@ -163,30 +162,29 @@
 								This site is designed to be simple, clean, and responsive.
 							</div>
 						</div>
-					</section>
-				</article>
-			</div>
+					</div>
+				</div>
+			</article>
 			<div class="row">
-				<section class="col-xs-12 skew">
+				<div class="col-xs-12 skew">
 					<hr>
-				</section>
+				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-4 col-sm-offset-4 text-center">
 					<button class="scroll" id="scroll-top">
 						<span class="glyphicon glyphicon-chevron-up"></span>
-						<h4>TOP</h4>
+						<span>TOP</span>
 					</button>
 				</div>
 			</div>
-			<div class="row">
+			<footer class="row">
 				<div class="col-sm-6 col-sm-offset-3 text-center">
-					<article id="footer">
+					<div id="footer">
 						<p>2017 - Developed by Brady Mauermann-Peterson</p>
-					</article>
-					
+					</div>
 				</div>
-			</div>
+			</footer>
 		</div>
 	</main>
 

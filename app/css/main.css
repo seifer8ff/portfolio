@@ -48,7 +48,11 @@ a>img {
 	margin-bottom: 8%;
 }
 
-.scroll>h4 {
+.scroll>span:not(.glyphicon) {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 1.2em;
 	letter-spacing: 1px;
 	color: #9FBCF6;
 }
