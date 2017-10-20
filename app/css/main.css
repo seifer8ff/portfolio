@@ -5,46 +5,76 @@ body {
 	background-color: #F3F7FE;
 }
 
-a>img {
-	padding-bottom: 5px;
+.fullscreen {
+	position: relative;
+	min-height: 500px;
+	height: 70vh;
 }
 
-
-#resume-floater {
+.float {
 	position: fixed;
-	top: 3%;
-	right: 3%;
-	box-shadow: 5px 5px 30px #888888;
 	z-index: 50;
 }
 
-#page-title {
-	font-size: 1.8em;
-	margin-top: 11vh;
-	margin-bottom: 18vh;
+.float a {
+	box-shadow: 4px 4px 14px #888888;
 }
 
-#page-title>h1 {
+.float.resume {
+	top: 20px;
+	right: 20px;
+}
+
+#title-container {
+	margin-top: 14vh;
+	margin-right: 4vw;
+	margin-left: 4vw;
+	margin-bottom: 8vh;
+}
+
+#title-container>h1 {
 	font-weight: 900;
-	font-size: 1.8em;
+	font-size: 46px;
 	letter-spacing: 4px;
 	text-transform: uppercase;
 	font-weight: 900; 
 }
 
+#title-container>h4 {
+	font-size: 20px;
+}
+
+.social {
+	text-align: center;
+}
+
+.social a {
+	display: inline-block;
+	margin-right: 40px;
+	margin-left: 40px;
+	opacity: 0.75;
+}
+
+.social a:hover, .social a:focus {
+	opacity: 1;
+}
+
 .scroll {
-	/*min-width: 250px;*/
 	background-image: none;
 	background-color: transparent;
 	border: none;
 }
 
-#scroll-projects {
-	margin-top: 9vh;
-	margin-bottom: -5vh;
+.scroll.top {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-image: none;
+	background-color: transparent;
+	border: none;
 }
 
-#scroll-top {
+.scroll.bottom {
 	margin-bottom: 8%;
 }
 
@@ -55,6 +85,14 @@ a>img {
 	font-size: 1.2em;
 	letter-spacing: 1px;
 	color: #9FBCF6;
+}
+
+a {
+	color: #2D70F3;
+}
+
+a:hover, a:focus, .scroll>span:hover, .scroll>span:focus {
+	color: #0353F1;
 }
 
 .scroll>.glyphicon {
@@ -86,10 +124,17 @@ a>img {
 
 .skew {
 	transform: skewY(-7deg);
-	/*padding-bottom: 100px;*/
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-top: 75px;
+	margin-bottom: 75px;
 	text-align: center;
+}
+
+.container-fluid>.row:first-of-type>.skew {
+	margin-top: 0px;
+}
+
+.skew.last {
+	margin-bottom: 0px;
 }
 
 .gradient-text {
@@ -141,13 +186,13 @@ a>img {
 }
 
 .img-bottom {
-	box-shadow: 10px 10px 26px #888888;
+	box-shadow: 2px 2px 5px #666666;
 	width: 90%;
 	margin-bottom: 8%;
 }
 
 .img-top {
-	box-shadow: 15px 15px 50px #888888;
+	box-shadow: 4px 4px 12px #888888;
 	position: absolute;
 	top: 15%;
 	right: 7%;
@@ -169,19 +214,11 @@ a[aria-expanded="true"] .caret {
 }
 
 #footer {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 
 /*BOOTSTRAP OVERRIDES */
-
-a {
-	color: #2D70F3;
-}
-
-a:hover, a:focus {
-	color: #0353F1;
-}
 
 .label {
 	font-weight: 400;
@@ -216,35 +253,54 @@ MEDIA QUERIES
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-	#page-title {
-		font-size: 2.5em;
-		margin-top: 13vh;
-		margin-bottom: 18vh;
+
+	.fullscreen {
+		height: 76vh;
 	}
 
-	#page-title>h1 {
-		font-size: 2.5em;
+	#title-container {
+		margin-right: 10vw;
+		margin-left: 10vw;
+	}
+
+	#title-container>h1 {
+		font-size: 70px;
 		letter-spacing: 5px;
-		text-transform: uppercase;
-		font-weight: 900; 
+	}
+
+	#title-container>h4 {
+		font-size: 22px;
+	}
+
+	.container-fluid>.row:first-of-type>.skew {
+		margin-top: 38px;
+	}
+
+	.skew.last {
+		margin-bottom: 38px;
 	}
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
-	#projects-link {
-		margin-top: 2vh;
-		margin-bottom: -5vh;
-	}
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-	#projects-link {
-		margin-top: 9vh;
-		margin-bottom: 0vh;
+	#title-container {
+		margin-right: 7vw;
+		margin-left: 7vw;
+	}
+
+	#title-container>h1 {
+		font-size: 86px;
+		letter-spacing: 5px;
+	}
+
+	#title-container>h4 {
+		font-size: 24px;
 	}
 
 }
